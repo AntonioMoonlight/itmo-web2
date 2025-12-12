@@ -19,10 +19,6 @@ public class AreaCheckServlet extends HttpServlet {
             double y = Double.parseDouble(req.getParameter("y").replace(",", "."));
             double r = Double.parseDouble(req.getParameter("r").replace(",", "."));
 
-            if (r < 2 || r > 5) {
-                throw new NumberFormatException("R out of range");
-            }
-
             boolean hit = checkArea(x, y, r);
             ResultRow row = new ResultRow(x, y, r, hit);
 

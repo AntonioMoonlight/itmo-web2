@@ -1,8 +1,9 @@
 # Default ignored files
 /shelf/
-/workspace.xml
+/.idea/workspace.xml
 .classpath
 .project
+.idea/
 .settings/
 target/
-.png
+*.png
